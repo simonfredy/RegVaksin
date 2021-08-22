@@ -9,92 +9,119 @@
     <title>Registrasi Vaksin RSBM</title>
 </head>
 <body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuresponsive" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuresponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <button href="#" class="btn btn-outline-primary mr-2">Tata Cara Pendaftaran</button>
+                    </li>
+                    <li class="nav-item">
+                        <button href="#" class="btn btn-success">Cek Pendaftaran</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     
-    <div class="container border rounded-top rounded-bottom mt-3">
-        <h1>Registrasi Vaksin Rumkit Bhayangkara TK.II Medan</h1>
-        <p class="text-muted">Harap diisi untuk mendaftar vaksin</p>
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-body">
+                <h1>Registrasi Vaksin Rumkit Bhayangkara TK.II Medan</h1>
+                <p class="text-muted">Harap diisi untuk mendaftar vaksin</p>
+            </div>
+        </div>
     </div>
 
-    <div class="container border rounded-top rounded-bottom mt-3">
-        <form action="">
-            <div class="form-group mt-2">
-                <label for="nik">NIK</label>
-                <input type="text" class="form-control" name="nik" id="nik">
-                <small class="form-text text-muted">Masukkan NIK sesuai dengan KTP-Eletronik Anda</small>
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-body">
+                <form action="">
+                    <div class="form-group mt-2">
+                        <label for="nik">NIK</label>
+                        <input type="text" class="form-control" name="nik" id="nik">
+                        <small class="form-text text-muted">Masukkan NIK sesuai dengan KTP-Eletronik Anda</small>
+                    </div>
+        
+                    <div class="form-group mt-2">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" class="form-control" name="nama" id="nama">
+                        <small class="form-text text-muted">Masukkan Nama sesuai dengan KTP-Eletronik Anda</small>
+                    </div>
+        
+                    <div class="form-group mt-2">
+                        <label for="jeniskelamin">Jenis Kelamin</label>
+                        <div class="form-check">
+                            <input type="radio" name="lakilaki" id="lakilaki" class="form-check-input" value="LakiLaki">
+                            <label for="lakilaki" class="form-check-label">Laki - Laki</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="perempuan" id="perempuan" class="form-check-input" value="Perempuan">
+                            <label for="perempuan" class="form-check-label">Perempuan</label>
+                        </div>
+                    </div>
+        
+                    <div class="form-group mt-2">
+                        <label for="tgllahir">Tanggal Lahir</label>
+                        <input id="datepicker" width=auto>
+                    </div>
+        
+                    <div class="form-group mt-2">
+                        <label for="alamat">Alamat</label>
+                        <textarea name="" id="alamat" cols="3"class="form-control"></textarea>
+                        <small class="form-text text-muted">Masukkan Alamat sesuai dengan KTP-Eletronik Anda</small>
+                    </div>
+        
+                    <div class="form-group mt-2">
+                        <label for="nohp">Nomor Handphone</label>
+                        <input type="text" class="form-control" name="nohp" id="nohp">
+                        <small class="form-text text-muted">Masukkan Nomor Handphone yang bisa terima SMS</small>
+                    </div>
+        
+                    <div class="form-group mt-2">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                        <small class="form-text text-muted">Masukkan Email Valid</small>
+                    </div>
+        
+                    <div class="form-group mt-2">
+                        <label for="kerja">Pekerjaan</label>
+                        <input type="text" class="form-control" name="kerja" id="kerja">
+                    </div>
+        
+        
+                    <div class="form-group mt-2">
+                        <label for="statusbpjs">Status Keanggotaan BPJS</label>
+                        <div class="form-check">
+                            <input type="radio" name="dibayarpemerintah" id="dibayarpemerintah" class="form-check-input" value="dibayarpemerintah">
+                            <label for="dibayarpemerintah" class="form-check-label">Dibayar Pemerintah</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="dibayarperusahaan" id="dibayarperusahaan" class="form-check-input" value="dibayarperusahaan">
+                            <label for="dibayarperusahaan" class="form-check-label">Dibayar Perusahaan / Institusi</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="bayarmandiri" id="bayarmandiri" class="form-check-input" value="bayarmandiri">
+                            <label for="bayarmandiri" class="form-check-label">Pembayaran Mandiri</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="tidakadabpjs" id="tidakadabpjs" class="form-check-input" value="tidakadabpjs">
+                            <label for="tidakadabpjs" class="form-check-label">Tidak Memiliki BPJS</label>
+                        </div>
+                    </div>
+        
+                    <div class="form-group mt-2">
+                        <button type="submit" class="btn btn-primary">Daftar</button>
+                    </div>
+        
+                </form>
             </div>
-
-            <div class="form-group mt-2">
-                <label for="nama">Nama Lengkap</label>
-                <input type="text" class="form-control" name="nama" id="nama">
-                <small class="form-text text-muted">Masukkan Nama sesuai dengan KTP-Eletronik Anda</small>
-            </div>
-
-            <div class="form-group mt-2">
-                <label for="jeniskelamin">Jenis Kelamin</label>
-                <div class="form-check">
-                    <input type="radio" name="lakilaki" id="lakilaki" class="form-check-input" value="LakiLaki">
-                    <label for="lakilaki" class="form-check-label">Laki - Laki</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" name="perempuan" id="perempuan" class="form-check-input" value="Perempuan">
-                    <label for="perempuan" class="form-check-label">Perempuan</label>
-                </div>
-            </div>
-
-            <div class="form-group mt-2">
-                <label for="tgllahir">Tanggal Lahir</label>
-                <input id="datepicker" width=auto>
-            </div>
-
-            <div class="form-group mt-2">
-                <label for="alamat">Alamat</label>
-                <textarea name="" id="alamat" cols="3"class="form-control"></textarea>
-                <small class="form-text text-muted">Masukkan Alamat sesuai dengan KTP-Eletronik Anda</small>
-            </div>
-
-            <div class="form-group mt-2">
-                <label for="nohp">Nomor Handphone</label>
-                <input type="text" class="form-control" name="nohp" id="nohp">
-                <small class="form-text text-muted">Masukkan Nomor Handphone yang bisa terima SMS</small>
-            </div>
-
-            <div class="form-group mt-2">
-                <label for="email">E-mail</label>
-                <input type="email" class="form-control" name="email" id="email">
-                <small class="form-text text-muted">Masukkan Email Valid</small>
-            </div>
-
-            <div class="form-group mt-2">
-                <label for="kerja">Pekerjaan</label>
-                <input type="text" class="form-control" name="kerja" id="kerja">
-            </div>
-
-
-            <div class="form-group mt-2">
-                <label for="statusbpjs">Status Keanggotaan BPJS</label>
-                <div class="form-check">
-                    <input type="radio" name="dibayarpemerintah" id="dibayarpemerintah" class="form-check-input" value="dibayarpemerintah">
-                    <label for="dibayarpemerintah" class="form-check-label">Dibayar Pemerintah</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" name="dibayarperusahaan" id="dibayarperusahaan" class="form-check-input" value="dibayarperusahaan">
-                    <label for="dibayarperusahaan" class="form-check-label">Dibayar Perusahaan / Institusi</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" name="bayarmandiri" id="bayarmandiri" class="form-check-input" value="bayarmandiri">
-                    <label for="bayarmandiri" class="form-check-label">Pembayaran Mandiri</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" name="tidakadabpjs" id="tidakadabpjs" class="form-check-input" value="tidakadabpjs">
-                    <label for="tidakadabpjs" class="form-check-label">Tidak Memiliki BPJS</label>
-                </div>
-            </div>
-
-            <div class="form-group mt-2">
-                <button type="submit" class="btn btn-primary">Daftar</button>
-            </div>
-
-        </form>
+        </div>
     </div>
 
 
